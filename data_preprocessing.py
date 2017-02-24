@@ -8,11 +8,11 @@ print data['Sex'].value_counts().values
 
 print ("\n2nd task")
 a = data['Survived'].loc[data['Survived'] == 1].value_counts().values
-print np.round(np.true_divide(a, data.__len__())*100,2)
+print np.round(np.true_divide(a, len(data))*100,2)
 
 print ("\n3th task")
 a = data['Pclass'].loc[data['Pclass'] == 1].value_counts().values
-print np.round(np.true_divide(a, data.__len__())*100,2)
+print np.round(np.true_divide(a, len(data))*100,2)
 
 print ("\n4th task")
 print np.round(data['Age'].mean(),2)
